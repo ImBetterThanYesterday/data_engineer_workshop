@@ -24,13 +24,14 @@ This project is part of a Python data engineering challenge. The main objective 
    ````bash
    sudo docker run -d --name=postgres -p 5432:5432 -v postgres-volume:/var/lib/postgresql/data -e POSTGRES_PASSWORD=mysecretpass postgres
 5. Create a db_config.json file (in the same folder) with the PostgreSQL database connection parameters:
-    {
-    "host": "localhost",          
-    "port": "5435",               
-    "database": "postgres",       
-    "user": "postgres",           
-    "password": "mysecretpass"
-    }
+    ```json
+   {
+       "host": "localhost",
+       "port": "5435",
+       "database": "postgres",
+       "user": "postgres",
+       "password": "mysecretpass"
+   }
 6. Run the project
 
 
